@@ -1,6 +1,6 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, Outlet } from 'react-router-dom';
 
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
     const location = useLocation();
 
     const navigation = [
@@ -84,7 +84,7 @@ const MainLayout = ({ children }) => {
 
             {/* Main Content */}
             <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 pb-20">
-                {children}
+                <Outlet />
             </main>
 
             {/* Bottom Navigation */}
