@@ -1,33 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Custom base styles */
-@layer base {
-  body {
-    @apply bg-gray-50 text-gray-900;
-  }
-
-  h1 {
-    @apply text-2xl font-bold mb-4;
-  }
-
-  h2 {
-    @apply text-xl font-bold mb-3;
-  }
-
-  h3 {
-    @apply text-lg font-semibold mb-2;
-  }
-}
-
-/* Custom component classes */
-@layer components {
-  .card {
-    @apply bg-white rounded-lg shadow p-4;
-  }
-
-  .container-page {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4;
-  }
-}
